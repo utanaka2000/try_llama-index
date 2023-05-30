@@ -1,0 +1,11 @@
+{
+    "shortcuts": [
+        {
+            "command": "vim:leave-insert-mode",
+            "keys": [
+                "Ctrl J"
+            ],
+            "selector": ".jp-NotebookPanel[data-jp-vim-mode='true'] .jp-Notebook.jp-mod-editMode"
+        }
+    ]
+}
