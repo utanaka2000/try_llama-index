@@ -1,4 +1,4 @@
-FROM python:3.11-buster
+FROM python:3.11-slim
 
 
 RUN curl -sL https://deb.nodesource.com/setup_18.x | bash
@@ -18,5 +18,6 @@ RUN jupyter labextension update --all
 
 COPY jupyter_lab_config.py /root/.jupyter/
 COPY shortcuts.jupyterlab-settings /root/.jupyter/lab/user-settings/@jupyterlab/shortcuts-extension/
+COPY .jupytext /root/.config/
 
 WORKDIR /jupyter
