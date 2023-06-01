@@ -5,7 +5,7 @@ Also, additional keybord shortcuts, which is mapping ctrl-j to escape in insert 
 ## Settings
 * set `JUPYTER_TOKEN` in `.env` like bellow
 ```
-echo `JUPYTER_TOKEN=FAVOLITE_TOKEN` > .env
+echo JUPYTER_TOKEN=FAVOLITE_TOKEN > .env
 ```
 ## Usage
 ```
