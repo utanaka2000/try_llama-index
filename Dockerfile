@@ -3,7 +3,7 @@ FROM python:3.11-slim
 
 RUN curl -sL https://deb.nodesource.com/setup_18.x | bash
 RUN apt-get update && \
-    apt-get -y install locales wait-for-it nodejs && \
+    apt-get -y install locales nodejs && \
     localedef -f UTF-8 -i ja_JP ja_JP.UTF-8
 ENV LANG ja_JP.UTF-8
 ENV LANGUAGE ja_JP:ja
@@ -19,5 +19,6 @@ RUN jupyter labextension update --all
 COPY jupyter_lab_config.py /root/.jupyter/
 COPY shortcuts.jupyterlab-settings /root/.jupyter/lab/user-settings/@jupyterlab/shortcuts-extension/
 COPY .jupytext /root/.config/
+COPY .env /jupyter/
 
 WORKDIR /jupyter

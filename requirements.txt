@@ -1,3 +1,5 @@
 jupyterlab==3.4.6
 jupyterlab-vim
 jupytext
+
+llama-index
